@@ -3,19 +3,31 @@
   <employee>
    <slno>23</slno>
    <name>John Carter</name>
-   <admissionDate>25-12-2015</admissionDate>
+   <admissionDate>
+     <day>25</day>
+     <month>12</month>
+     <year>2015</year>
+   </admissionDate>
   </employee>
 
   <employee>
    <slno>29</slno>
    <name>Bob Marshal</name>
-   <admissionDate>13-01-1999</admissionDate>
+   <admissionDate>
+     <day>13</day>
+     <month>1</month>
+     <year>1999</year>
+   </admissionDate>
   </employee>
 
   <employee>
    <slno>35</slno>
    <name>Clark Kent</name>
-   <admissionDate>17-06-2005</admissionDate>
+   <admissionDate>
+     <day>17</day>
+     <month>06</month>
+     <year>2005</year>
+   </admissionDate>
   </employee>
 
 </info>
