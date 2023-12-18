@@ -33,8 +33,10 @@ if(isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="form-container">
     <form id="form" action:"" method="POST" align="center">
         <fieldset>
             <legend><strong>Registration</strong></legend>
@@ -60,7 +62,6 @@ if(isset($_POST['submit'])){
             <td align="right"><label for="user_type">User type</td>
         <td align="left"><select name="user_type" >
             <option>User</option>
-            <option>Instructor</option>
             <option>Admin</option>
         </select></td>
         </div></tr>
@@ -75,5 +76,6 @@ if(isset($_POST['submit'])){
 </table>
         </fieldset>
     </form>
+    </div>
 </body>
 </html>

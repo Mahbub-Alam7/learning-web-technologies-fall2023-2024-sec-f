@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
       }elseif($row['user_type'] == 'Instructor'){
 
         $_SESSION['instructor_name'] = $row['username'];
-        header('location:inshome.php');
+        header('location:instructorhome.php');
 
      }
      
@@ -50,15 +50,16 @@ if(isset($_POST['submit'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Login</title>
-
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
    
-<div>
+<div class="form-container">
 
    <form action="" method="post" align="center">
     <fieldset>
       <legend><strong>Login</strong></legend>
+      <div id="error"></div>
       <?php
       if(isset($error)){
          foreach($error as $error){
@@ -69,10 +70,10 @@ if(isset($_POST['submit'])){
       <table align="center">
       <tr><td align="right">
       <label for="username">Username</label></td>
-      <td><input type="text" name="username" required></td></tr>
+      <td><input type="text" id="username" name="username" required></td></tr>
       <tr><td align="right">
       <label for="password">Password</label></td>
-      <td><input type="password" name="password" required></td></tr>
+      <td><input type="password" id="password" name="password" required></td></tr>
       <tr><td></td><td align="">
       <input type="submit" name="submit"></td></tr>
       <tr><td></td><td><p>Don't have an account? <a href="reg.php">Sign Up</a></p></td>
