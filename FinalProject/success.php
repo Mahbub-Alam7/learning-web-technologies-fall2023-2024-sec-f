@@ -11,7 +11,7 @@
     <table align="center">
         <tr>
 <td><h3 align="center">Registration Successful!</h3></td></tr>
-    <tr><td align-"center">Go to <a href="log.php">Login</a> page</td></tr>
+    <tr><td align="center">Go to <a href="log.php">Login</a> page</td></tr>
 </table>
 </div>
 </body>
